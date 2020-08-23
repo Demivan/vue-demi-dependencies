@@ -1026,18 +1026,19 @@ resolve@^1.17.0:
     "@vue/composition-api": ^1.0.0-beta.11
     rollup: ^2.26.5
     vue: ^2.6.12
-    vue-demi: ^0.3.0
+    vue-demi: "git@github.com:Demivan/vue-demi.git#vue-peer-dependency"
   languageName: unknown
   linkType: soft
 
-"vue-demi@npm:^0.3.0":
+"vue-demi@git@github.com:Demivan/vue-demi.git#vue-peer-dependency":
   version: 0.3.0
-  resolution: "vue-demi@npm:0.3.0"
+  resolution: "vue-demi@git@github.com:Demivan/vue-demi.git#commit=2c1e25a0f4ff3c824417895336ac7cf5dc942d87"
   peerDependencies:
     "@vue/composition-api": ">=1.0.0-beta.1"
+    vue: ^2.0.0 || >=3.0.0-rc.1
   bin:
-    vue-demi-fix: scripts/postinstall.js
-  checksum: 398abff7fd993ad7f62c00ffbdb5df46317a66a7e0d6e4155791cdd4c16894dad708b8c47f424abc347a0bb5a574737df5c79442cb8d92b94f55fa0bd2bf3e91
+    vue-demi-fix: ./scripts/postinstall.js
+  checksum: 8a115eb201b8803810f647c28f26197e00840876c7fd8e07fb7e4df11f3251d58de2d6270b0ef995afd503035175222cf40621f2c0b1efcea9e398be670f4f37
   languageName: node
   linkType: hard
 
