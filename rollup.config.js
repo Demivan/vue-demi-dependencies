@@ -6,5 +6,6 @@ export default {
     file: 'bundle.js',
     format: 'cjs'
   },
-  plugins: [nodeResolve()]
+  plugins: [nodeResolve()],
+  external: ['vue', '@vue/composition-api', 'vue-demi']
 }
